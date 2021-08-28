@@ -1,3 +1,9 @@
+<div align="right">
+    <img src="https://img.shields.io/static/v1?label=Language&message=shell&color=blue&style=flat-square"/>
+    <img src="https://img.shields.io/static/v1?label=License&message=MIT&color=blue&style=flat-square"/>
+</div>
+
+
 # 🟩 gh-graph-cli
 
 **gh-graph** is a wrapper command for [kawarimidoll/deno-github-contributions-api](https://github.com/kawarimidoll/deno-github-contributions-api).
@@ -49,10 +55,8 @@ curl -O https://raw.githubusercontent.com/sheepla/gh-graph-cli/master/gh-graph &
 
 This command utilises this API. Thanks!✨
 
--  [kawarimidoll/deno-github-contributions-api](https://github.com/kawarimidoll/deno-github-contributions-api)
+>  [kawarimidoll/deno-github-contributions-api](https://github.com/kawarimidoll/deno-github-contributions-api)
 
 ## Development
 
-Issue and PR is welcome! ✨
-
-
+Issue and PR is welcome!
