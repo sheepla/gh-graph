@@ -1,6 +1,6 @@
 # 🟩 gh-graph-cli
 
-a wrapper command for [kawarimidoll/deno-github-contributions-api](https://github.com/kawarimidoll/deno-github-contributions-api)
+**gh-graph** is a wrapper command for [kawarimidoll/deno-github-contributions-api](https://github.com/kawarimidoll/deno-github-contributions-api).
 
 <img src="./screenshot.png"/>
 
@@ -51,7 +51,8 @@ This command utilises this API. Thanks!✨
 
 -  [kawarimidoll/deno-github-contributions-api](https://github.com/kawarimidoll/deno-github-contributions-api)
 
-## TODO
+## Development
 
-- Add options for API parameters
+Issue and PR is welcome! ✨
+
 
