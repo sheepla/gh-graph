@@ -53,12 +53,6 @@ THANKS
 
 function _main() {
 
-    if [[ "${#}" -lt 2 ]]; then
-        _err "Too few arguments..."
-        _help
-        return 0
-    fi
-
     for arg in "${@}"; do
         case "${arg}" in
         --help)
@@ -71,6 +65,13 @@ function _main() {
             ;;
         esac
     done
+
+
+    if [[ "${#}" -lt 2 ]]; then
+        _err "Too few arguments..."
+        _help
+        return 0
+    fi
 
     _test_cmd curl || return 1
 
