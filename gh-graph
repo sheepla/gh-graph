@@ -68,11 +68,11 @@ function _main() {
         --version)
             _version
             return 0
+            ;;
         esac
     done
 
     _test_cmd curl || return 1
-
 
     for arg in "${@}"; do
         case "${arg}" in
@@ -127,7 +127,10 @@ function _fetch() {
     shift 2
 
     # join args with "&"
-    local params="$(IFS="&";printf "${*}")"
+    local params="$(
+        IFS="&"
+        printf "${*}"
+    )"
 
     if [ -z "${params}" ]; then
         curl -s "${BASE_URL}/${username}.${mode}"
