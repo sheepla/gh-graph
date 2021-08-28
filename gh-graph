@@ -53,8 +53,8 @@ THANKS
 
 function _main() {
 
-    if [[ "${#}" -lt 1 ]]; then
-        _err "Must require arguments..."
+    if [[ "${#}" -lt 2 ]]; then
+        _err "Too few arguments..."
         _help
         return 0
     fi
