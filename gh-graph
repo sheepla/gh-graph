@@ -1,0 +1,122 @@
+#!/bin/bash
+
+set -o errexit
+#set -o nounset
+
+readonly THIS_CMD="${0##*/}"
+readonly BASE_URL="https://github-contributions-api.deno.dev"
+
+function _version() {
+    readonly VERSION="0.0.1"
+    readonly AUTHOR="sheepla"
+    readonly LICENSE="MIT"
+    readonly GITHUB_URL="https://github.com"
+    echo -e "${THIS_CMD} -- v${VERSION}
+    Repo:   ${GITHUB_URL}/${AUTHOR}/gh-grass-cli
+    Author: ${AUTHOR} (${GITHUB_URL}/${AUTHOR})
+    "
+}
+
+function _help() {
+    echo -e "\
+${THIS_CMD} -- a gh-contribution-api wrapper command
+
+USAGE
+    ${THIS_CMD} MODE [OPTIONS_FOR_SUBCMD...]
+    ${THIS_CMD} --help|--version
+MODE
+    t, term
+    j, json
+    x, text
+    s, svg
+"
+}
+
+function _main() {
+
+    if [[ "${#}" -lt 1 ]]; then
+        _err "Must require arguments..."
+        _help
+        return 0
+    fi
+
+    for arg in "${@}"; do
+        case "${arg}" in
+        --help)
+            _help
+            return 0
+            ;;
+        --version)
+            _version
+            return 0
+        esac
+    done
+
+    _test_cmd curl || return 1
+
+    for arg in "${@}"; do
+        case "${arg}" in
+        t | term)
+            shift 1
+            _fetch_term "${@}"
+            return 0
+            ;;
+        j | json)
+            shift 1
+            _fetch_json "${@}"
+            return 0
+            ;;
+        x | text)
+            shift 1
+            _fetch_text "${@}"
+            return 0
+            ;;
+        s | svg)
+            shift 1
+            _fetch_svg "${@}"
+            return 0
+            ;;
+        *)
+            _err "Invalid sub command ${arg}"
+            _help
+            return 1
+            ;;
+        esac
+    done
+}
+
+function _err() {
+    echo -e "[ \e[31mERR\e[m ] ${*}"
+}
+
+function _test_cmd() {
+    for cmd in "${@}"; do
+        if ! command -v "${cmd}" &>/dev/null; then
+            _err "${cmd} is not installed. please install it."
+            return 1
+        fi
+    done
+}
+
+function _fetch_term() {
+    readonly USERNAME="${1}"
+    curl -s "${BASE_URL}/${USERNAME}.term"
+}
+
+function _fetch_text() {
+    readonly USERNAME="${1}"
+    curl -s "${BASE_URL}/${USERNAME}.text"
+}
+
+function _fetch_json() {
+    readonly USERNAME="${1}"
+    curl -s "${BASE_URL}/${USERNAME}.json"
+}
+
+function _fetch_svg() {
+    readonly USERNAME="${1}"
+    curl -s "${BASE_URL}/${USERNAME}.svg"
+}
+
+_main "${@}"
+exit "${?}"
