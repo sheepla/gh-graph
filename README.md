@@ -1,8 +1,8 @@
-# gh-graph-cli
+# 🟩 gh-graph-cli
 
 a wrapper command for [kawarimidoll/deno-github-contributions-api](https://github.com/kawarimidoll/deno-github-contributions-api)
 
-## USAGE
+## Usage
 
 ```
 gh-graph -- a gh-contribution-api wrapper command
@@ -26,4 +26,7 @@ Just download and add executable permission
 ```bash
 curl -O raw.githubusercontent.com/sheepla/gh-graph-cli/gh-graph && chmod +x gh-graph
 ```
+## TODO
+
+- Add options for API parameters
 
