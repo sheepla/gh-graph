@@ -34,6 +34,13 @@ Just download and add executable permission
 ```bash
 curl -O https://raw.githubusercontent.com/sheepla/gh-graph-cli/master/gh-graph && chmod +x gh-graph
 ```
+
+## Thanks
+
+This command utilises this API. Thanks!✨
+
+-  [kawarimidoll/deno-github-contributions-api](https://github.com/kawarimidoll/deno-github-contributions-api)
+
 ## TODO
 
 - Add options for API parameters
