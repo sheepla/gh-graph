@@ -11,8 +11,9 @@ function _version() {
     readonly AUTHOR="sheepla"
     readonly LICENSE="MIT"
     readonly GITHUB_URL="https://github.com"
+    readonly REPO_NAME="${THIS_CMD}-cli"
     echo -e "${THIS_CMD} -- v${VERSION}
-    Repo:   ${GITHUB_URL}/${AUTHOR}/gh-grass-cli
+    Repo:   ${GITHUB_URL}/${AUTHOR}/${REPO_NAME}
     Author: ${AUTHOR} (${GITHUB_URL}/${AUTHOR})
     "
 }
