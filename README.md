@@ -5,16 +5,21 @@ a wrapper command for [kawarimidoll/deno-github-contributions-api](https://githu
 ## Usage
 
 ```
-gh-graph -- a gh-contribution-api wrapper command
+gh-graph -- a github-contribution-api wrapper command
 
 USAGE
-    gh-graph MODE [OPTIONS_FOR_SUBCMD...]
+    gh-graph MODE
     gh-graph --help|--version
 MODE
     t, term
     j, json
     x, text
     s, svg
+
+THANKS
+    This tool utilises this API. Thanks!
+    https://github.com/kawarimidoll/deno-github-contributions-api
+
 ```
 
 ## Installation

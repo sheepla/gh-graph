@@ -18,17 +18,23 @@ function _version() {
 }
 
 function _help() {
+    readonly API_REPO_URL="https://github.com/kawarimidoll/deno-github-contributions-api"
+
     echo -e "\
-${THIS_CMD} -- a gh-contribution-api wrapper command
+${THIS_CMD} -- a github-contribution-api wrapper command
 
 USAGE
-    ${THIS_CMD} MODE [OPTIONS_FOR_SUBCMD...]
+    ${THIS_CMD} MODE
     ${THIS_CMD} --help|--version
 MODE
     t, term
     j, json
     x, text
     s, svg
+
+THANKS
+    This tool utilises this API. Thanks!
+    ${API_REPO_URL}
 "
 }
 
