@@ -25,7 +25,7 @@ function _help() {
 ${THIS_CMD} -- a github-contribution-api wrapper command
 
 USAGE
-    ${THIS_CMD} MODE
+    ${THIS_CMD} MODE USERNAME
     ${THIS_CMD} --help|--version
 MODE
     t, term

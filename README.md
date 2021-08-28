@@ -8,8 +8,9 @@ a wrapper command for [kawarimidoll/deno-github-contributions-api](https://githu
 gh-graph -- a github-contribution-api wrapper command
 
 USAGE
-    gh-graph MODE
+    gh-graph MODE USERNAME
     gh-graph --help|--version
+
 MODE
     t, term
     j, json
