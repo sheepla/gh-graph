@@ -10,14 +10,14 @@ a wrapper command for [kawarimidoll/deno-github-contributions-api](https://githu
 gh-graph -- a github-contribution-api wrapper command
 
 USAGE
-    gh-graph MODE USERNAME PARAMS...
+    gh-graph MODE USERNAME [PARAMS...]
     gh-graph --help|--version
 
     * MODE: output mode
-        t, term
-        j, json
-        x, text
-        s, svg
+        t, term   print data as a colored pixels graph
+        j, json   print data as a JSON
+        x, text   print data as a table-styled text
+        s, svg    print data as a SVG image
     * USERNAME: username on GitHub
     * PARAMS: 
         parameters for the API 
@@ -27,7 +27,7 @@ USAGE
             curl https://github-contributions-api.deno.dev/{{USERNAME}}
 
 EXAMPLES
-    gh-graph term sheepla scheme=random
+    gh-graph term sheepla scheme=pink
     gh-graph json sheepla flat=true
 
 THANKS
