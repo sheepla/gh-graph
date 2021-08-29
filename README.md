@@ -8,7 +8,13 @@
 
 **gh-graph** is a wrapper command for [kawarimidoll/deno-github-contributions-api](https://github.com/kawarimidoll/deno-github-contributions-api).
 
+## Screenshot
+
 <img src="./screenshot.png"/>
+
+## Demo on asciinema.org
+
+> [gh-graph-cli - asciinema.org](https://asciinema.org/a/432861)
 
 ## Usage
 
