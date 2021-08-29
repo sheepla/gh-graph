@@ -8,6 +8,8 @@
 
 **gh-graph** is a wrapper command for [kawarimidoll/deno-github-contributions-api](https://github.com/kawarimidoll/deno-github-contributions-api).
 
+Let's draw contribution graph on your terminal! 🌳
+
 ## Screenshot
 
 <img src="./screenshot.png"/>
