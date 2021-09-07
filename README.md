@@ -4,7 +4,7 @@
 </div>
 
 
-# 🟩 gh-graph-cli
+# 🟩 gh-graph
 
 **gh-graph** is a wrapper command for [kawarimidoll/deno-github-contributions-api](https://github.com/kawarimidoll/deno-github-contributions-api).
 
