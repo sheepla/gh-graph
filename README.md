@@ -56,7 +56,7 @@ Requires `curl`
 Just download and add executable permission
 
 ```bash
-curl -O https://raw.githubusercontent.com/sheepla/gh-graph-cli/master/gh-graph && chmod +x gh-graph
+curl -O https://raw.githubusercontent.com/sheepla/gh-graph/master/gh-graph && chmod +x gh-graph
 ```
 
 ## Install as an Extension for GitHub CLI
