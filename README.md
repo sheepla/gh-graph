@@ -49,7 +49,7 @@ THANKS
     https://github.com/kawarimidoll/deno-github-contributions-api
 ```
 
-## Installation
+## Install as an Command
 
 Requires `curl`
 
@@ -57,6 +57,16 @@ Just download and add executable permission
 
 ```bash
 curl -O https://raw.githubusercontent.com/sheepla/gh-graph-cli/master/gh-graph && chmod +x gh-graph
+```
+
+## Install as GitHub CLI Extension
+
+Requires `curl` and GitHub CLI
+
+> [cli/cli - GitHub](https://github.com/cli/cli)
+
+```bash
+gh extension install sheepla/gh-graph
 ```
 
 ## Thanks
