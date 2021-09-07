@@ -59,9 +59,9 @@ Just download and add executable permission
 curl -O https://raw.githubusercontent.com/sheepla/gh-graph-cli/master/gh-graph && chmod +x gh-graph
 ```
 
-## Install as GitHub CLI Extension
+## Install as an Extension for GitHub CLI
 
-Requires `curl` and GitHub CLI
+Requires `curl` and GitHub CLI v2.0.0+
 
 > [cli/cli - GitHub](https://github.com/cli/cli)
 
